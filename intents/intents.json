@@ -1,0 +1,602 @@
+{
+  "intents": [
+    {
+      "tag": "powitanie",
+      "patterns": [
+        "Cześć",
+        "Witaj",
+        "Witam cię",
+        "Siemanko",
+        "Hej",
+        "czesc",
+        "witaj",
+        "Dzień dobry",
+        "dzien dobry",
+        "dobry dzien",
+        "Dobry dzień",
+        "Witam serdecznie",
+        "witaj czatbocie"
+      ],
+      "responses": [
+        "Witaj :)",
+        "Cześć :)",
+        "Witaj, jak tam? :)",
+        "Cześć, co słychać? :)"
+      ]
+    },
+    {
+      "tag": "pozegnanie",
+      "patterns": [
+        "Do widzenia",
+        "Narazie",
+        "Bywaj",
+        "Trzymaj się",
+        "Żegnaj",
+        "Widzimy się kiedy indziej",
+        "Do później",
+        "do pozniej",
+        "dowidzenia",
+        "dobranoc",
+        "dobra noc",
+        "zegnaj"
+      ],
+      "responses": [
+        "W takim razie żegnaj",
+        "Na razie, do później",
+        "Mam nadzieje, że się jeszcze spotkamy"
+      ]
+    },
+    {
+      "tag": "podziekowanie",
+      "patterns": [
+        "Dziekuje",
+        "Dziekuje bardzo",
+        "Bardzo jestes pomocny",
+        "Jestes super pomocny",
+        "Dziekuje za pomoc",
+        "Wspaniale ze mi pomogles",
+        "jestes wspanialy",
+        "dziekuje serdecznie",
+        "dziekuje za pomoc",
+        "dziekuje"
+      ],
+      "responses": [
+        "Jestem tu zeby pomagac",
+        "Nie ma za co",
+        "Zawsze do uslug"
+      ]
+    },
+    {
+      "tag": "pogoda",
+      "patterns": [
+        "Jaka jest pogoda w ",
+        "Sprawdz mi pogode w",
+        "Jaka jest dzisiaj pogoda w ",
+        "Jaka bedzie pogoda w ",
+        "Pogoda w",
+        "Prognoza pogody w ",
+        "Miejscowosc ",
+        "Dane pogodowe w ",
+        "Podaj mi pogode dla",
+        "Sprawdź mi pogodę w mieście",
+        "Jaka będzie pogoda w ",
+        "Podaj mi prognozę pogody dla miasta",
+        "Miejscowość "
+      ],
+      "responses": [
+        "Dzisiaj w mieście {} jest {} stopni Celcjusza",
+        "W miejscowości {} dzisiaj jest {} stopni Celcjusza",
+        "Miasto {} ma dzisiaj tyle stopni Celcjusza {}"
+      ]
+    },
+    {
+      "tag": "status_zamowienia",
+      "patterns": [
+        "Jaki jest status zamówienia o numerze ",
+        "Zamowienie numer",
+        "Powiedz mi w jakim statusie jest zamowienie",
+        "Status zamowienia ",
+        "W jakim miejscu jest moje zamowienie",
+        "Kiedy bedzie moje zamowienie",
+        "Zamowienie ",
+        "Jaki jest status zamowineia o numerze"
+      ],
+      "responses": [
+        "Zamówienie o numerze {} jest w statusie {}",
+        "Zamówienie {} ma status {}",
+        "Twoje zamówienie {} ma status {}",
+        "Numer zamówienia: {} | Status: {}"
+      ]
+    },
+    {
+      "tag": "wysylka_zamowienia",
+      "patterns": [
+        "Kiedy mogę się spodziewać wysyłki swojego zamówienia?",
+        "Kiedy moge sie spodziewac wysylki swojego zamowienia?",
+        "Kiedy wysyłka?",
+        "Kiedy wysylka?",
+        "Jak długo trwa wysłanie zamówienia?",
+        "Jak długo trwa wyslanie zamówienia?",
+        "Jeżeli dzisiaj zamówiłem to ile trwa wysłanie zamówienia?",
+        "Jezeli dzisiaj zamowilem to ile trwa wyslanie zamowienia?",
+        "Po jakim czasie od zamówienia następuje wysłanie zamówienia?",
+        "Po jakim czasie od zamowienia nastepuje wyslanie zamowienia?",
+        "Spodziewana wysyłka",
+        "Spodziewana wysylka",
+        "Wysłanie zamówienia, kiedy?",
+        "Wyslanie zamowienia, kiedy?",
+        "kiedy bedzie wyslane zamowienie"
+      ],
+      "responses": [
+        "Zamówienie zostaje wysłane w ciągu 2 dni od złożenia zamówienia",
+        "Wysyłamy do 2 dni po złożeniu zamówienia",
+        "Wysyłka następuje do 2 dni po złożeniu zamówienia",
+        "Najczęsciej wysyłka następuje po 2 dniach od złożenia zamówienia w naszym sklepie",
+        "Zamówienie zostaje wysłane do 2 dni od złożenia zamówienia"
+      ]
+    },
+    {
+      "tag": "czas_dostawy",
+      "patterns": [
+        "Jak długo trwa dostawa wysłanego zamówienia?",
+        "Jak długo trwa dostawa wyslanego zamowienia?",
+        "Ile czasu potrzeba na dostarczenie zamówienia?",
+        "Ile czasu potrzeba na dostarczenie zamowienia?",
+        "Ile czasu trwa dostarczenie zamówienia?",
+        "Ile czasu trwa dostarczenie zamowienia?",
+        "Po jakim czasie zamówienie zostanie dostarczone do mnie?",
+        "Po jakim czasie zamowienie zostanie dostarczone do mnie?",
+        "Po jakim czasie mogę się spodziewać dostarczenia wysyłki?",
+        "Po jakim czasie moge sie spodziewac dostarczenia wysylki?"
+      ],
+      "responses": [
+        "Czas dostawy zależy od przewoźnika, zazwyczaj są to 2 dni robocze",
+        "Dostawa zamówienia zazwyczaj trwa 2 dni robocze",
+        "W zależności od wybranego przewoźnika, 2-3 dni robocze",
+        "Czas dostawy zależy od kuriera, najczęsciej są to 2 dni robocze"
+      ]
+    },
+    {
+      "tag": "kontakt",
+      "patterns": [
+        "Jak mogę się z wami skontaktować?",
+        "Jak moge sie z wami skontaktować?",
+        "Kontakt ze sklepem",
+        "Kontakt ze sprzedawcą",
+        "Kontakt ze sprzedawca",
+        "W jaki sposób mogę się skontakować z waszym sklepem?",
+        "W jaki sposob moge sie skontakować z waszym sklepem?",
+        "Kontakt z waszym sklepem",
+        "Potrzebuję pomocy",
+        "Potrzebuje pomocy",
+        "Mam problem i potrzebuję pomocy",
+        "Mam problem i potrzebuje pomocy",
+        "Mam pytania i potrzebuje kontaktu",
+        "Mam pytanie i potrzebuje pomocy",
+        "kontakt z obsluga",
+        "obsluga klienta",
+        "chce sie z wami skontaktowac"
+      ],
+      "responses": [
+        "Jeżeli masz jakikolwiek problem jesteśmy dostępni pod mailem : x@x.x lub tel: 123-456-789",
+        "Możesz się z nami skontaktować pod email: x@x.x lub tel: 123-456-789",
+        "W razie problemów możesz się z nami skontaktować pod email: x@x.x lub tel: 123-456-789"
+      ]
+    },
+    {
+      "tag": "pelna_oferta",
+      "patterns": [
+        "Gdzie mogę sprawdzić pełną ofertę sklepu?",
+        "Gdzie moge sprawdzic pelna oferte sklepu?",
+        "Czy na stronie jest pełna oferta?",
+        "Czy na stronie jest pelna oferta?",
+        "Macie dodatkową ofertę produktów?",
+        "Macie dodatkową oferte produktow?",
+        "Czy widoczne produkty to wszystkie dostępne?",
+        "Czy widoczne produkty to wszystkie dostepne?",
+        "Dodatkowa oferta sprzedażowa",
+        "Dodatkowa oferta sprzedazowa",
+        "Pełna oferta sprzedażowa",
+        "Pelna oferta sprzedazowa",
+        "Pełna oferta produktów",
+        "Pelna oferta produktow"
+      ],
+      "responses": [
+        "Pełną ofertę sprzedaży znajdziesz na www.abc.pl",
+        "Możesz sprawdzić naszą ofertę sprzedaży na www.abc.pl",
+        "Wszystkie oferowane produkty znajdują się na www.abc.pl"
+      ]
+    },
+    {
+      "tag": "sprzedaz_hurt",
+      "patterns": [
+        "Czy oferujecie możliwość sprzedaży hurtowej?",
+        "Czy oferujecie mozliwosc sprzedazy hurtowej?",
+        "Sprzedaż hurtowa",
+        "Sprzedaz hurtowa",
+        "Opcja sprzedaży hurtowej",
+        "Opcja sprzedazy hurtowej",
+        "Czy jest możliwość sprzedaży hurtowej?",
+        "Czy jest możliwosc sprzedazy hurtowej?",
+        "Chciałbym nawiązać współpracę",
+        "Chcialbym nawiazac wspolprace",
+        "Chcę złożyć duże zamówienie",
+        "Chcę zlozyc duze zamowienie",
+        "Chciałbym się dowiedzieć o sprzedaży hurtowej",
+        "Chcialbym sie dowiedziec o sprzedazy hurtowej",
+        "Chciałabym kupić hurtowo",
+        "Chcialabym kupic hurtowo",
+        "chce kupic hurtowow",
+        "czy moge u was kupic hurtowo",
+        "hurtowe zakupy"
+      ],
+      "responses": [
+        "W tej sytuacji proszę o kontakt z obsługą klienta, tel: 123-456-789",
+        "Aby uzyskać więcej informacji w tym temacie proszę o kontakt telefoniczyn 123-456-789",
+        "Więcej informacji w tym temacie uzyskasz pod numerem telefonu 123-456-789"
+      ]
+    },
+    {
+      "tag": "rabaty",
+      "patterns": [
+        "Czy jest możliwość uzyskania rabatów na zakupy?",
+        "Czy jest mozliwosc uzyskania rabatow na zakupy?",
+        "Chciałbym uzyskać dodatkowe rabaty",
+        "Chciałbym uzyskac dodatkowe rabaty",
+        "Chciałabym uzyskać dodatkowe rabaty",
+        "Chciałabym uzyskac dodatkowe rabaty",
+        "Czy istnieje możliwość uzyskania dodatkowego rabatu na zakupy?",
+        "Czy istnieje mozliwość uzyskania dodatkowego rabatu na zakupy?",
+        "Rabat na zamówienie",
+        "Rabat na zamowienie",
+        "Tańsze zamówienie",
+        "Tansze zamowienie",
+        "Uzyskanie rabatów",
+        "Uzyskanie rabatow",
+        "Czy jest kod promocyjny?",
+        "Jak mogę uzyskać rabat na zakupy?",
+        "Jak moge uzyskac rabat na zakupy?",
+        "chce rabat",
+        "daj rabat",
+        "jak dostac rabat",
+        "chce uzyskac rabat ma zakupy",
+        "rabat na zakupy",
+        "rabacik",
+        "daj rabacik",
+        "a dostane rabat"
+      ],
+      "responses": [
+        "Możesz uzyskać rabat zapisując się do naszego newstlettera",
+        "Poprzez zapisanie do newslettera możesz uzyskać mały rabat na zakupy",
+        "Jeżeli interesuje Cię uzyskanie rabatu możesz zapisać się do newslettera"
+      ]
+    },
+    {
+      "tag": "newsletter_joined",
+      "patterns": [
+        "Już jestem zapisany do newslettera",
+        "Juz jestem zapisany do newslettera",
+        "Juz jestem zapisany do newsletera",
+        "Już się zapisałam do newslettera wcześniej",
+        "Juz się zapisalam do newslettera wczesniej",
+        "Juz się zapisalam do newsletera wczesniej",
+        "Wcześniej byłem zapisany do newslettera",
+        "Wcześniej byłem zapisany do newsletera",
+        "Wczesniej bylem zapisany do newslettera",
+        "Wcześniej byłam zapisana do newslettera",
+        "Wczesniej bylam zapisana do newslettera",
+        "Wczesniej bylam zapisana do newsletera",
+        "Wczesniej bylam zapisana do newsletera",
+        "Mam już wasz newsletter",
+        "Mam już wasz newsleter",
+        "Mam juz wasz newsletter",
+        "newsleter",
+        "newsletera",
+        "mam juz newsletera",
+        "juz jestem zapisany do newsletera",
+        "juz jestem zapisany do newsletter",
+        "mam juz newsletter"
+      ],
+      "responses": [
+        "To wspaniale! Sprawdź swoją pocztę, powinien tam być kod rabatowy",
+        "Superancko! Na swojej skrzynce pocztowej powinieneś mieć kod rabatowy",
+        "Hurra! Sprawdź swój email, powinieneś tam znaleźć kod rabatowy"
+      ]
+    },
+    {
+      "tag": "oryginalne_towary",
+      "patterns": [
+        "Czy wasze produkty są oryginalne?",
+        "Wasz towar jest oryginalny?",
+        "Czy wasze towary są oryginalne?",
+        "Oryginalne towary",
+        "Skąd mogę wiedzieć, że wasz towar jest oryginalny?",
+        "Skad moge wiedziec, że wasz towar jest oryginalny?",
+        "czy was towar jest oryginalny"
+      ],
+      "responses": [
+        "Nasz towar jest w 100% oryginalny, prosto od producenta",
+        "Sprzedajemy tylko oryginalne towary, handel towarem podrabianym jest niezgodny z prawem",
+        "Posiadamy tylko oryginalne towary, w razie wątpliwości towar można zwrócić w ciągu 14 dni od dnia zakupu"
+      ]
+    },
+    {
+      "tag": "opoznione_zamowienie",
+      "patterns": [
+        "Bardzo długo czekam na otrzymanie zamówienia",
+        "Bardzo dlugo czekam na otrzymanie zamowienia",
+        "Dlaczego jeszcze nie otrzymałem swojego zamówienia?",
+        "Dlaczego jeszcze nie otrzymalem swojego zamowienia?",
+        "Jak długo mogę oczekiwać na otrzymanie zamówienia",
+        "Jak dlugo moge oczekiwac na otrzymanie zamowienia",
+        "Nadal nie otrzymałem swojego zamówienia",
+        "Nadal nie otrzymałem swojego zamowienia",
+        "Dlaczego tak długo czekam na otrzymanie zamówienia?",
+        "Dlaczego tak dlugo czekam na otrzymanie zamowienia?",
+        "czemu tak dlugo czekam na dostawe",
+        "dlatego tak dlugo czekam na dostawe"
+      ],
+      "responses": [
+        "Bardzo przepraszamy za problem, proponujemy poczekać jeszcze dzień, jeżeli nie przyjdzie to prosimy o kontakt z obsługą klienta",
+        "Przepraszam bardzo za to że musisz tak długo czekać, jeżeli nie przyjdzie w ciągu kolejnego dnia proszę o kontakt z naszą obsługą klienta",
+        "Przepraszamy bardzo, jeżeli nie otrzymasz zamówienia w ciągu kolejnego dnia proszę o kontakt z naszym działem obsługi klienta w celu wyjaśnienia tej sprawy"
+      ]
+    },
+    {
+      "tag": "anulowanie_zamowienia",
+      "patterns" : [
+        "Chciałbym anulować złożone zamówienie",
+        "Chcialbym anulowac złozone zamowienie",
+        "Chciałabym anulowac swoje zamówienie",
+        "Chcialabym anulowac swoje zamowienie",
+        "W jaki sposób mogę złożyć anulację zamówienia",
+        "W jaki sposob mogę zlozyc anulacje zamowienia",
+        "Anulowanie zamówienia",
+        "Anulowanie zamowienia",
+        "Jak anulować zamówienie?",
+        "Jak anulować zamowienie?",
+        "Anulacja zamówienia",
+        "Anulacja zamowienia",
+        "Wycofanie złożonego zamówienia",
+        "Wycofanie zlozonego zamowienia",
+        "Jak mogę wycofać swoje zamówienie?",
+        "Jak mogę wycofac swoje zamowienie?",
+        "chce anulowac zamowienie",
+        "anuluj mi zamowienie",
+        "chce anulowanie",
+        "anulowanie zamowienia",
+        "anuluj moje zamowienie"
+      ],
+      "responses" : [
+        "Aby anulować zamówienie prosimy o kontakt z obsługą klienta. Pamiętaj, że jest to możliwe tylko przed wysłaniem",
+        "Anluowanie zamówienia jest możliwe, w tym celu prosimy o kontakt z obsługą klienta",
+        "Możesz anulować swoje zamówienie ale jest to możliwe tylko w momencie w którym nie zostało ono jeszcze wysłane, w tym celu prosimy o kontakt z obsługą klienta"
+      ]
+    },
+    {
+      "tag": "kiedy_otwarte",
+      "patterns": [
+        "Jakie macie godziny otwarcia?",
+        "Godziny otwarcia",
+        "W jakich godzinach macie otwartą siedzibę?",
+        "W jakich godzinach macie otwarta siedzibe?",
+        "Godziny otwarcia siedziby",
+        "Godziny w których pracujecie",
+        "godziny otwarcia",
+        "w jakich godzinach jestescie otwarci",
+        "podaj godziny otwarcia",
+        "daj godziny otwarcia"
+      ],
+      "responses": [
+        "Godziny w których pracujemy to 8-16 poniedziałek-piatek, nasz sklep internetowy jest otwarty całą dobę",
+        "Biuro działa w godzinach 8-16 od poniedziałku do piątku, za to nasz sklep internetowy otwarty jest przez cały dzień",
+        "Nasz sklep internetowy otwarty jest przez cały dzień, biuro od 8 do 16 w dni robocze"
+      ]
+    },
+    {
+      "tag": "lokalizacja_siedziby",
+      "patterns": [
+        "Gdzie znajduje się wasza siedziba?",
+        "Gdzie mam przyjechać po odbiór osobity zamówienia?",
+        "Gdzie mam przyjechac po odbior osobity zamowienia?",
+        "W którym miejscu znajduje się wasza centrala?",
+        "W którym miejscu znajduje sie wasza centrala?",
+        "W jakim miejscu znajduje się wasza siedziba?",
+        "W jakim miejscu znajduje sie wasza siedziba?",
+        "Gdzie znajduje się wasza firma?",
+        "Gdzie znajduje sie wasza firma?",
+        "Lokalizacja firmy",
+        "Lokalizacja siedziby firmy",
+        "gdzie znajduje sie firma",
+        "daj lokalizacje firmy",
+        "gdzie sie znajdujecie"
+      ],
+      "responses": [
+        "Nasza siedziba znajduje się w X na ulicy Y",
+        "Siedziba firmy znajduje się w miejscowości X na ulicy Y",
+        "Znajdziesz nas w mieście X na ulicy Y",
+        "Możesz nas znaleźc w miejscowości X na ulicy Y"
+      ]
+    },
+    {
+      "tag": "proces_reklamacji",
+      "patterns": [
+        "Jak mogę złożyć reklamację?",
+        "Jak moge zlozyc reklamacje?",
+        "Jak wygląda proces reklamacji?",
+        "W jaki sposób odbywa się proces reklamacji?",
+        "W jaki sposob odbywa się proces reklamacji?",
+        "Jak złożyć reklamację?",
+        "Jak zlozyc reklamacje?",
+        "Reklamacje",
+        "Chciałbym złożyć reklamację",
+        "Chcialbym zlozyc reklamacje",
+        "Chciałabym złożyć reklamację",
+        "Chcialabym złozyc reklamacje",
+        "Reklamacja zamówienia",
+        "Reklamacja zamowienia",
+        "Jak można reklamować?",
+        "Jak można reklamowac?",
+        "Chcę złożyć reklamację",
+        "Chce zlozyc reklamacje",
+        "jak zlozyc reklamacje",
+        "chce zlozyc reklamacje",
+        "chce reklamowac zamowienie"
+      ],
+      "responses": [
+        "Aby złożyć reklamację należy pobrać formularz reklamacyjny dla zamówienia i wysłać produkt wraz z fomualrzem na nasz adres firmowy",
+        "Reklamacja odbywa się poprzez pobranie formularza reklamacyjnego i odesłanie zamówienia na nasz adres firmowy",
+        "Aby zareklamować produkt należy pobrać formularz reklamacyjny oraz odesłać zamówienie na adres firmy"
+      ]
+    },
+    {
+      "tag" : "pobieranie_formularza_reklamacji",
+      "patterns" :[
+        "Gdzie znajduje się formularz reklamacyjny?",
+        "Gdzie znajduje sie formularz reklamacyjny?",
+        "Skąd mogę pobrać formularz reklamacyjny?",
+        "Skad moge pobrać formularz reklamacyjny?",
+        "Jak pobrać fomularz reklamacyjny?",
+        "Jak pobrac fomularz reklamacyjny?",
+        "Chcę pobrać formularz reklamacyjny",
+        "Chce pobrac formularz reklamacyjny",
+        "Jak mogę pobrać formualrz do reklamacji?",
+        "Jak moge pobrac formualrz do reklamacji?",
+        "chce pobrac formularz reklamacji",
+        "gdzie jest ten formularz",
+        "gdzie jest formularz reklamacyjny",
+        "formularz reklamacyjny",
+        "gdzie pobrac formularz",
+        "gdzie pobrac formularz reklamacyjny",
+        "gdzie pobiore formularz"
+      ],
+      "responses":[
+        "Formularz reklamacyjny znajduje się na stronie sklepu w zakładce reklamacje",
+        "Aby pobrać formularz reklamacyjny należy wejść w zakładkę reklamacje na naszej stronie internetowej",
+        "Jeżeli chcesz pobrać formularz reklamacyjny musisz wejść w zakładkę reklamacje która znajduje się na naszej stronie internetowej"
+      ]
+    },
+    {
+      "tag": "odbior_osobisty",
+      "patterns": [
+        "Czy mogę odebrać zamówienie osobiście?",
+        "Czy moge odebrac zamowienie osobiscie?",
+        "Czy jest opcja odbioru osobistego?",
+        "Odbiór osoboty zamówienia",
+        "Odbior osoboty zamowienia",
+        "Jak mogę odebrać zamówienie osobiście?",
+        "Jak moge odebrac zamowienie osobiscie?",
+        "Czy jest możliwość odbioru osobistego zamówienia?",
+        "Czy jest mozliwość odbioru osobistego zamowienia?",
+        "chce odebrac osobiscie zamowienie",
+        "chce odbior osobisty",
+        "chce odebrac osobiscie"
+      ],
+      "responses":[
+        "Oczywiscie istnieje opcja odbioru osobistego zamówienia, w tym celu należy złożyć zamówienie z opcją odbioru osobistego a następnie po otrzymaniu informacji złośic sie do naszej siedziby w celu odebrania zamówienia",
+        "Jak najbardziej można odebrać zamówienie osobiście, po złożeniu zamówienie z odbiorem osobistym należy po otrzymaniu informacji o gotowości zamówienia do odbioru odebrać je w siedzibie naszej firmy"
+      ]
+    },
+    {
+      "tag": "specjalne_pakowanie",
+      "patterns": [
+        "Czy oferujecie specjalne pakowanie zamówienień?",
+        "Czy oferujecie specjalne pakowanie zamowienien?",
+        "Czy jest możliwość zapakowania zamówienia w formie prezentu?",
+        "Czy jest mozliwość zapakowania zamowienia w formie prezentu?",
+        "Chcę kupić produkt jako prezent",
+        "Chce kupic produkt jako prezent",
+        "Specjalne pakowanie zamówienia",
+        "Specjalne pakowanie zamowienia"
+      ],
+      "responses":[
+        "Niestety nie ma takiej możliwości, wszystkie zamówienia pakowane są w foliopaki",
+        "Niestety nasza firma nie oferuje możliwości specjalnego pakowania zamówienia",
+        "Nie ma takiej możliwości, wszystkie nasze zamówienia pakowane są w foliopaki"
+      ]
+    },
+    {
+      "tag": "darmowa_wysylka",
+      "patterns":[
+        "Czy jest możliwość darmowej wysyłki zamówienia?",
+        "Czy jest mozliwosc darmowej wysylki zamowienia?",
+        "Darmowa wysyłka zamówienia",
+        "Darmowa wysylka zamowienia",
+        "Darmowa wysyłka",
+        "Darmowa wysylka",
+        "Przy jakiej kwocie zamówienia jest opcja darmowej wysyłki zamówienia?",
+        "Przy jakiej kwocie zamowienia jest opcja darmowej wysylki zamowienia?",
+        "Jakie warunki pozwalają na darmową wysyłkę zamówienia?",
+        "Jakie warunki pozwalaja na darmowa wysyłke zamowienia?",
+        "chce darmowa wysylke",
+        "darmowa wysylka zamowienia",
+        "jak zrobic darmowa wysylke",
+        "zrob mi darmowa wysylke zamowienia"
+      ],
+      "responses" :[
+        "Oczywiście, darmowa wysyłka obowiązuje od zamówień powyżej 300 zł",
+        "Jak najbardziej, darmową wysyłke uzyskasz robiąc zakupy powyżej 300 zł",
+        "W naszym sklepie darmowa wysyłka obowiązuje dla zamówień powyżej 300 zł",
+        "Aby otrzymać darmową wysyłkę musisz złożyć zamówienie o kwocie powyżej 300zł"
+      ]
+    },
+    {
+      "tag":"zakupy_raty",
+      "patterns":[
+        "Czy można zrobić zakup na raty w waszym sklepie?",
+        "Czy mozna zrobic zakup na raty w waszym sklepie?",
+        "Czy oferujecie płatności w ratach?",
+        "Czy oferujecie platnosci w ratach?",
+        "Raty",
+        "Czy mogę zapłacić w za zamówienie w ratach?",
+        "Czy moge zapłacic w za zamowienie w ratach?",
+        "Chciałbym złożyć zamówienie z płatnością w ratach",
+        "Chcialbym zlozyc zamowienie z platnoscią w ratach",
+        "Chciałabym zrobić zamówienie z płatnością w ratach",
+        "Chcialabym zrobic zamowienie z platnoscia w ratach",
+        "Czy jest możliwość płatności w ratach?",
+        "Czy jest mozliwosc platnosci w ratach?",
+        "chce kupic na raty",
+        "chce zaplacic w ratach",
+        "czy moge zaplacic w ratach",
+        "chcialbym zaplacic w ratach",
+        "czy moge zaplacic na raty"
+      ],
+      "responses":[
+        "Jak najbardziej, przy finalizacji zamówienia należy wybrać płatność w ratach i postępować zgodnie z informacjami",
+        "Oczywiście, aby dokonać zakupu na raty należy wybrać opcję płatności w ratach",
+        "Aby zapłacić w ratach należy wybrać taką opcję w metodach płatnosci za zamówienie podczas finalizacji zamówienia"
+      ]
+    },
+    {
+      "tag": "koszty_dostawy",
+      "patterns":[
+        "Ile kosztuje wysyłka?",
+        "Ile kosztuje wysylka?",
+        "Jakie są koszta wysyłki zamówienia?",
+        "Jakie sa koszta wysylki zamowienia?",
+        "Ile muszę zapłacić za wysłanie zamówienia?",
+        "Ile musze zapłacic za wyslanie zamowienia?",
+        "Ile wynosi wysyłka zamówienia?",
+        "Ile wynosi wysylka zamowienia?",
+        "Koszt wysyłki zamówień",
+        "Koszt wysylki zamowien",
+        "Ile trzeba zapłacić za wysyłkę zamówienia",
+        "Ile trzeba zaplacic za wysylke zamowienia",
+        "Koszta wysyłki",
+        "Koszta wysylki",
+        "podaj koszty wysylki",
+        "ile zaplace za wysylke",
+        "ile musze zaplacic za wysylke",
+        "ile kosztuje dostawa",
+        "podaj mi koszty dostawy",
+        "ile dostawa kosztuje"
+      ],
+      "responses": [
+        "Koszt wysyłki zależy od wybranego kuriera, zazwyczaj jest to 12 zł. Jest również opcja damowej wysyłki",
+        "Cena wysyłki jest zależna od przewoźnika, zazwyczaj wynosi 12zł. Można też wybrać opcję darmowej dostawy",
+        "Koszt wysyłki jest różny i zależy od wybranego kuriera, najczęsciej jest to 12 zł. Mamy też opcję damowej dostawy"
+      ]
+    }
+  ]
+} 
