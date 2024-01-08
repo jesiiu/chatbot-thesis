@@ -14,7 +14,7 @@ API_DEFAULT_URL = "http://api.weatherapi.com/v1"
 #Sekcja dostępu do bazy danych
 DB_PATH = r"C:\Users\SKASUS\Desktop\Chatbot\db\sample_db.db"
 DB_USER = ""
-DB_PWD = ""
+DB_PWD = "s"
 
 #Sekcja ustawień startowych serwera aplikacji
 HOST = "0.0.0.0"
